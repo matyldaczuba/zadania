@@ -7,11 +7,11 @@
 <body>
     <form action="https://formspree.io/matylda.czuba@pm.me" method="post">
        
-        <label for="name">Imię: </label><input type="text" name="name" id="name"><br>
+        <label for="name">Imię: </label><input type="text" name="name" id="name" required><br>
         
-        <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname"><br>
+        <label for="surname">Nazwisko: </label><input type="text" name="surname" id="surname" required><br>
         
-        <label for="mail">E-mail: </label><input type="email" name="mail" id="mail"><br>
+        <label for="mail">E-mail: </label><input type="email" name="mail" id="mail" required><br>
         
         <label for="tel">Numer telefonu: </label><input type="number" name="tel" id="tel"><br>
         
@@ -23,12 +23,12 @@
         </select><br>
         
         
-        <input type="radio" name="gender" id="m"><label for="name">Mężczyzna</label><br>
+        <input type="radio" name="gender" id="m" checked><label for="name">Mężczyzna</label><br>
         <input type="radio" name="gender" id="f"><label for="name">Kobieta</label><br>
         
-        <input type="checkbox" name="agree" id="agree"><label for="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych.</label><br>
+        <input type="checkbox" name="agree" id="agree" required><label for="agree">Wyrażam zgodę na przetwarzanie moich danych osobowych.</label><br>
 
-        <textarea name="msg" id="msg" cols="30" rows="10" maxlength="2000"></textarea><br>
+        <textarea name="msg" id="msg" cols="30" rows="10" maxlength="2000" required></textarea><br>
         
         <input type="submit" value="Wyślij">
         
