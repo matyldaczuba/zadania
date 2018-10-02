@@ -1,0 +1,101 @@
+#main {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 5px solid white;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 50%;
+    z-index: 20;
+    top: 50px;
+    left: 50px;
+}
+
+/* ########### SQUARES ########### */
+
+#square2 {
+    left: 200px;
+}
+
+#square3 {
+    left: 400px;
+}
+
+#square4 {
+    top: 200px;
+}
+
+#square5 {
+    top: 200px;
+    left: 200px;
+}
+
+#square6 {
+    top: 200px;
+    left: 400px;
+}
+
+#square7 {
+    top: 400px;
+}
+
+#square8 {
+    top: 400px;
+    left: 200px;
+}
+
+#square9 {
+    top: 400px;
+    left: 400px;
+}
+
+
+/* ########### COLOURS ########### */
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.black{
+    background-color: black;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.gray{
+    background-color: gray;
+}
+
+.pink{
+    background-color: pink;
+}
+
