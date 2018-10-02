@@ -1,28 +1,82 @@
-@keyframes count{
-    0%{
-        content: "0"
+@keyframes count {
+    0% {
+        background: blue;
+    }
+
+
+    10% {
+        background: green;
+
     }
     
-    10%{
-        
+    20% {
+        background: yellow;
+
     }
     
-    20%{
-        
+    30% {
+        background: red;
+
+    }
+    40% {
+        background: purple;
+
+    }
+    50% {
+        background: black;
+
+    }
+    60% {
+        background: violet;
+
+    }
+    70% {
+        background: blue;
+
+    }
+    80% {
+        background: brown;
+
+    }
+    90% {
+        background: navy;
+
+    }
+    100% {
+        background: orange;
+
     }
     
-    0%{
-        
-    }
+    
+    
 }
 
-.box{
+.box {
     height: 300px;
-    width: 550px;
+    width: 500px;
     background: #000;
-    
+    position: relative;
     animation-name: count;
+    animation-delay: 1s;
     animation-duration: 10s;
-   
-    
+    animation-timing-function: step-start;
 }
+
+.box::after{
+    content: "1";
+    color: white;
+    font-size: 10vh;
+}
+
+.frame{
+    color: white;
+    font-size: 10vh;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    visibility: hidden;
+
+}
+
