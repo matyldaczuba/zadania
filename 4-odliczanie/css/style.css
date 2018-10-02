@@ -17,11 +17,8 @@
 }
 
 .frame:before {
-    animation-name: count;
-    animation-delay: 1s;
-    animation-duration: 12s;
-    animation-timing-function: step-start;
-    animation-fill-mode: forwards;
+    
+    animation: count 12s step-start 1s forwards;
     content: "10";
 }
 
