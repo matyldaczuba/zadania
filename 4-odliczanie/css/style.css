@@ -1,54 +1,63 @@
 @keyframes count {
-    0% {
-        background: blue;
-    }
+    0% {}
+
 
 
     10% {
-        background: green;
+
+        content: "9";
+
 
     }
-    
+
     20% {
-        background: yellow;
+        content: "8";
 
     }
-    
+
     30% {
-        background: red;
+        content: "7";
+
 
     }
+
     40% {
-        background: purple;
+        content: "6";
 
     }
+
     50% {
-        background: black;
+        content: "5";
 
     }
+
     60% {
-        background: violet;
+        content: "4";
 
     }
+
     70% {
-        background: blue;
+        content: "3";
 
     }
+
     80% {
-        background: brown;
+        content: "2";
 
     }
+
     90% {
-        background: navy;
+        content: "1";
 
     }
+
     100% {
-        background: orange;
+        content: "I love CSS :)";
 
     }
-    
-    
-    
+
+
+
 }
 
 .box {
@@ -56,19 +65,41 @@
     width: 500px;
     background: #000;
     position: relative;
+
+}
+
+.frame {
+    color: white;
+    font-size: 10vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.frame:before {
     animation-name: count;
     animation-delay: 1s;
     animation-duration: 10s;
     animation-timing-function: step-start;
+    animation-fill-mode: forwards;
+    content: "10";
 }
 
-.box::after{
+
+/*
+.box:before {
     content: "1";
     color: white;
     font-size: 10vh;
 }
+*/
 
-.frame{
+
+
+/*
+
+.frame {
     color: white;
     font-size: 10vh;
     white-space: nowrap;
@@ -79,4 +110,4 @@
     visibility: hidden;
 
 }
-
+*/
