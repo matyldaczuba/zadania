@@ -1,0 +1,28 @@
+@keyframes count{
+    0%{
+        content: "0"
+    }
+    
+    10%{
+        
+    }
+    
+    20%{
+        
+    }
+    
+    0%{
+        
+    }
+}
+
+.box{
+    height: 300px;
+    width: 550px;
+    background: #000;
+    
+    animation-name: count;
+    animation-duration: 10s;
+   
+    
+}
