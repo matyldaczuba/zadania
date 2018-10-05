@@ -20,7 +20,6 @@ p{
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
 }
 
 .flex-item{
@@ -56,4 +55,16 @@ footer {
     background: #6c5699;
     height: 10%;
     width: 100%;
+}
+
+@media (min-width: 992px){
+    
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    
+}
+
+@media (max-width: 768px){
+    
 }
