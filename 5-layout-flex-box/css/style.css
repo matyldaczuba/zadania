@@ -2,54 +2,58 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 1vh;
+}
+
 .flex-box {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     text-align: center;
     color: #fff;
     text-transform: uppercase;
     position: relative;
     display: flex;
-    align-items: stretch;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
-/*
 .flex-item{
-    flex-basis: 100rem;
+    
 }
-*/
 
 header {
     background: red;
-/*    flex-basis: 150%;*/
-    height: 10vh;
-    width: 100vw;
+    height: 10%;
+    width: 100%
     
 
 }
 
 .as-left {
     background: green;
-    height: 60%;
-/*    flex-basis: 50%;*/
+    height: 80%;
+    width: 20%;
 
 }
 
 main {
     background: #35a4c8;
-/*    flex-basis: 60%;*/
-
+    width: 60%;
 }
 
 .as-right {
     background: pink;
-/*    flex-basis: 20%;*/
-
+    width: 20%;
 }
 
 footer {
     background: #6c5699;
-/*    flex-basis: 100%;*/
-    height: 10vh;
-
+    height: 10%;
+    width: 100%;
 }
