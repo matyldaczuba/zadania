@@ -1,11 +1,11 @@
-let string = "Akademia108";
-
-console.log("Przed sortowaniem: " + string);
-function sort(text){
+function reverse(text){
     let array = text.split("");
-    let sortedArray = array.sort();
+    let reverseArray = array.reverse();
     
-    console.log("Po sortowaniu: " + array.join(""));
+    console.log("Po odwróceniu: " + array.join(""));
 }
 
-sort(string);
+let string = "Akademia108";
+console.log("Przed odwróceniem: " + string);
+
+reverse(string);
