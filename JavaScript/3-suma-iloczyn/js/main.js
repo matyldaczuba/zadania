@@ -1,16 +1,20 @@
-function sumaIloczyn (numArray){
-    
-    console.log(numArray);
-    numArray= [];
+//function sumaIloczyn (numArray){
+//    
+//    console.log(numArray);
+    numArray= [1, 2, 3, 4, 5, 6];
     let wynik = numArray.forEach( function(element, index){
-        suma=numArray[index]+numArray[index+1];
-        console.log("literacja");
+        if(index == numArray.length)
+        let suma=numArray[index] + numArray[];
+        console.log(suma);
+        
     })
     
+//}
 
+let liczby = [1, 2, 3, 4, 5, 6];
+let ilosc = liczby.length;  
+for(let i=0; i>=ilosc, i++){
     
 }
 
-let liczby = [1, 2, 3, 4, 5, 6];
-
-sumaIloczyn(liczby);
+//sumaIloczyn(liczby);
