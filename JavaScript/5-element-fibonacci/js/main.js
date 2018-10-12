@@ -6,6 +6,7 @@ function fib(n) {
     
     for (let i = 0; i <= n; i++) {
         suma = suma + i;
+        
         console.log(suma);
     }
 }
