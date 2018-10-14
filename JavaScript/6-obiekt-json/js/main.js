@@ -18,16 +18,11 @@ let jsonPracownicy = {
 
 console.log(jsonPracownicy);
 
-let pracownik = `Imię: ${jsonPracownicy.pracownicy[0].firstName} Nazwisko: ${jsonPracownicy.pracownicy[0].lastName}`;
+let pracownik = jsonPracownicy.pracownicy;
 
-console.log(pracownik);
+pracownik.forEach(function(element, index){
+    let wyswietl = `Index: ${index} Imię: ${jsonPracownicy.pracownicy[index].firstName} Nazwisko: ${jsonPracownicy.pracownicy[index].lastName}`;
+    console.log(wyswietl);
+});
 
-//jsonPracownicy.forEach(function(element, index){
-//    console.log(`Index: ${index} Imię: ${jsonPracownicy.pracownicy[index].firstName} Nazwisko: ${jsonPracownicy.pracownicy[index].lastName}`);
-//});
-//
 
-//jsonPracownicy.forEach(function (el,ind){
-//    pracownik = `Index: ${ind} Imię: ${jsonPracownicy.pracownicy[ind].firstName} Nazwisko: ${jsonPracownicy.pracownicy[ind].lastName}`;
-//    console.log(pracownik);
-//});
