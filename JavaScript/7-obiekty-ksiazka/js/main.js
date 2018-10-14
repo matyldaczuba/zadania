@@ -4,12 +4,12 @@ class Ksiazka{
         
         this.title = tytul;
         this.author = autor;
-        this.read = przeczytana;
+        this.ifRead = przeczytana;
             
     }
     
     opiszKsiazke(){
-        let read = this.read;
+        let read = this.ifRead;
         function czyt(){
             
             if(read == true){
@@ -46,12 +46,23 @@ console.log(ksiazka3.opiszKsiazke());
 let tablicaKsiazek = [ksiazka1, ksiazka2, ksiazka3];
 
 function iloscPrzeczytanych(tablicaKsiazek){
-//    let przeczytane = tablicaKsiazek.forEach(ksiazka,i){
-//        if(ksiazka.read === true){
-//            
-//        }
-//    }
+    
+    let suma = 0;
+    
+    tablicaKsiazek.forEach(function(el, ind){
+        
+        if(tablicaKsiazek.ifRead===true){
+            suma++;
+            console.log("sjusnaxd");
+        }
+        else{
+            console.log("nie przeczytano żadnych książek");
+        }
+        
+    });
+    console.log(suma);
+   
 }
 
 
-
+iloscPrzeczytanych(tablicaKsiazek);
