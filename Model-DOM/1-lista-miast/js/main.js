@@ -3,10 +3,18 @@ let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokio', 'Mosco
 
 let body = document.body;
 let ol = document.createElement('ol');
-
+let li;
+let liText;
 cities.forEach(function(el, ind){
-    ol.appendChild(document.createElement('li'));
     
-})
+    li = ol.appendChild(document.createElement('li'));
+    
+    li.setAttribute("class", "city");
+    
+    liText = document.createTextNode(el);
+    
+    li.appendChild(liText);
+});
 
-console.log(ol.children)
+body.appendChild(ol);
+
