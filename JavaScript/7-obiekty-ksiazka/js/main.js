@@ -38,25 +38,24 @@ let ksiazka3 = new Ksiazka('W pustyni i w puszczy', 'Henryk Sienkiewicz', false)
 
 let tablicaKsiazek = [ksiazka1, ksiazka2, ksiazka3];
 
-function iloscPrzeczytanych(tablicaKsiazek) {
+function iloscPrzeczytanych(tablica) {
 
     let przeczytaneKsiazki = 0;
 
-    tablicaKsiazek.forEach(function (el, ind) {
+    tablica.forEach(function (el, ind) {
 
         console.log(el.opiszKsiazke());
 
         if (el.ifRead === true) {
-
+            
             przeczytaneKsiazki++;
-
         }
-
     });
     
-    console.log("Ilość przeczytanych książek: " + przeczytaneKsiazki);
-
+     return(przeczytaneKsiazki);
+    
 }
 
+console.log("Ilość przeczytanych książek: " + iloscPrzeczytanych(tablicaKsiazek));
 
-iloscPrzeczytanych(tablicaKsiazek);
+
