@@ -20,11 +20,16 @@ function sort(array){
         }
         
     }
+    
+    return array;
    
-    console.log(`Po sortowaniu: ${array}`);
 }
 
-sort(tablica);
+
+
+console.log(`Po sortowaniu: ${sort(tablica)}`);
+
+
 
 
 
