@@ -1,0 +1,13 @@
+*~
+._*
+.~lock.*
+.sass-cache
+.DS_Store
+config.rb
+node_modules
+gulpfile.js
+package.json
+package-lock.json
+podglad-po.jpg
+
+
